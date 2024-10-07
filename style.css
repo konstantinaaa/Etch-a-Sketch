@@ -26,12 +26,19 @@ body {
   border: 1px solid #000;
 }
 
-#button {
+#button,
+#reset {
   font-size: 30px;
   color: white;
   background-color: grey;
   border-radius: 5px;
-  padding: 3px;
+  padding: 3px;5
+}
+
+#button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 #wrapper {

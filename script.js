@@ -42,6 +42,7 @@ function getRandomColor() {
 // create the initial 16x16 grid
 createGrid(16);
 
+//  activate the button: "Squares per side"
 const button = document.querySelector("#button");
 
 button.addEventListener("click", () => {
@@ -55,4 +56,11 @@ button.addEventListener("click", () => {
   } else {
     alert("Enter a number  between 1 and 100.");
   }
+});
+
+// activate the button: "Reset"
+const reset = document.querySelector("#reset");
+
+reset.addEventListener("click", () => {
+  createGrid(16);
 });
